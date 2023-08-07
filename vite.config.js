@@ -8,7 +8,7 @@ export default defineConfig({
     port: 'https://radiant-frangipane-073e2d.netlify.app',
     proxy: {
       '/users':{
-        target:'https://todoappbackend-jz46.onrender.com',
+        target:'http://ec2-3-84-162-115.compute-1.amazonaws.com/',
         changeOrigin: true
       }
     }
