@@ -67,11 +67,11 @@ const Home = () => {
   }
 
   const handleFacebookLogin = async() =>{
-    window.location.href = 'http://localhost:5000/users/auth/facebook'
+    window.location.href = 'https://ec2-3-84-162-115.compute-1.amazonaws.com//users/auth/facebook'
   }
 
   const handleGoogleLogin = async() =>{
-    window.location.href = 'http://localhost:5000/users/auth/google'
+    window.location.href = 'https://ec2-3-84-162-115.compute-1.amazonaws.com/users/auth/google'
  
   }
 
