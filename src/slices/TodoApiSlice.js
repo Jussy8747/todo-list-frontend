@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const todoApi = createApi({
     reducerPath: "todoApi",
-    baseQuery: fetchBaseQuery({baseUrl: ''}),
+    baseQuery: fetchBaseQuery({baseUrl: 'http://ec2-3-84-162-115.compute-1.amazonaws.com'}),
    tagTypes: ['todos'],
     endpoints: (builder) =>({
 
