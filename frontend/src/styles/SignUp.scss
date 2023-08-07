@@ -1,0 +1,63 @@
+.loginForm {
+    width: 30rem;
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+  
+    input {
+      width: 30rem;
+      height: 4.5rem;
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 20px;
+      opacity: 1;
+    }
+  
+    .inputButton {
+      width: 30rem;
+      height: 4.5rem;
+      border-radius: 10px;
+      font-size: 25px;
+    }
+  
+    .otherButton {
+      width: 30rem;
+      height: 4.5rem;
+      border-radius: 1px;
+      font-size: 25px;
+      padding-left: 2rem;
+  
+      button {
+        padding-left: 3rem;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      /* For screens with a maximum width of 768px (e.g., tablets and smaller) */
+  
+      width: 100%;
+      max-width: 30rem;
+  
+      input,
+      .inputButton,
+      .otherButton {
+        width: 100%;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      /* For screens with a maximum width of 480px (e.g., smartphones) */
+  
+      width: 100%;
+      max-width: 100%;
+  
+      input,
+      .inputButton,
+      .otherButton {
+        width: 100%;
+      }
+    }
+  }
+  
