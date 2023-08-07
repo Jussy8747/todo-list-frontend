@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 'https://todoapp-frontend-iryf.onrender.com/',
+    port: 'https://radiant-frangipane-073e2d.netlify.app',
     proxy: {
       '/users':{
         target:'https://todoappbackend-jz46.onrender.com',
