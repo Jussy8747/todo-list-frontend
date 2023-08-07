@@ -51,7 +51,7 @@ export const authUserApi = createApi({
 
         reset_password: builder.mutation({
             query: (data)=>({
-                url: `http://localhost:5000/users/reset-password`,
+                url: `https://todoapp-frontend-iryf.onrender.com/users/reset-password`,
                 method: 'POST',
                 body: data
             })
