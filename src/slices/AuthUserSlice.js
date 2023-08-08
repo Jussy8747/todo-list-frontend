@@ -2,7 +2,8 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 
 export const authUserApi = createApi({
-    reducerPath: fetchBsaeQuery: {'https://ec2-3-84-162-115.compute-1.amazonaws.com/'}),
+    reducerPath: 'authUserApi',
+    baseQuery: fetchBaseQuery({baseUrl: 'https://todoappbackend-jz46.onrender.com/'}),
     tagTypes: ['Users'],
     endpoints: (builder) => ({
         register: builder.mutation({
@@ -50,7 +51,7 @@ export const authUserApi = createApi({
 
         reset_password: builder.mutation({
             query: (data)=>({
-                url: `https://ec2-3-84-162-115.compute-1.amazonaws.com/users/reset-password`,
+                url: `users/reset-password`,
                 method: 'POST',
                 body: data
             })
