@@ -21,7 +21,7 @@ const MainPage = () => {
     
     const getProfile = async()=>{
       try {
-        const res = await fetch('users/profile')
+        const res = await fetch('https://todoappbackend-jz46.onrender.com/users/profile')
         if (res.ok) {
           const data = await res.json();
           dispatch(setUserInfo({ ...data }));
