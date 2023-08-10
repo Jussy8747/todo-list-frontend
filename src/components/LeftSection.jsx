@@ -51,7 +51,7 @@ const LeftSection = () => {
 
         const handlelogout = async ()=>{
             try {
-               await fetch('https://todoappbackend-jz46.onrender.com/users/auth/logout') 
+               await fetch('users/auth/logout') 
                 await logOut().unwrap()
                 dispatch(logout())
                 dispatch(SetTodo(null))

@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const authUserApi = createApi({
     reducerPath: 'authUserApi',
-    baseQuery: fetchBaseQuery({baseUrl: 'https://todoappbackend-jz46.onrender.com/'}),
+    baseQuery: fetchBaseQuery({baseUrl: ''}),
     tagTypes: ['Users'],
     endpoints: (builder) => ({
         register: builder.mutation({

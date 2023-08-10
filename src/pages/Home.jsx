@@ -67,11 +67,11 @@ const Home = () => {
   }
 
   const handleFacebookLogin = async() =>{
-    window.location.href = 'https://todoappbackend-jz46.onrender.com/users/auth/facebook'
+    window.location.href = 'http://localhost:5000/users/auth/facebook'
   }
 
   const handleGoogleLogin = async() =>{
-    window.location.href = 'https://todoappbackend-jz46.onrender.com/users/auth/google'
+    window.location.href = 'http://localhost:5000/users/auth/google'
  
   }
 
